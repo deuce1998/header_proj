@@ -1,0 +1,125 @@
+#h-contacts{
+
+}
+.h-tel-group{
+    display: block;
+    margin-top: 0.5rem;
+    width: fit-content;
+    margin: 15px 0 0 auto;
+}
+.h-tel{
+    display: none;
+}
+.h-tel.active{
+    display: block;
+}
+.h-tel-content{
+    display: flex;
+}
+.h-tel-content button{
+
+}
+.h-tel-group > div.h-tel{
+    position: absolute;
+}
+.h-soc{
+    
+}
+.h-btns{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 5px 0 auto;
+}
+.h-btns button{
+    margin: 0 15px 0 0;
+}
+.d-flex{
+    display: flex;
+}
+#h-search-block{
+    width: 100%;
+}
+#h-search-block form{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+#h-search-block input{
+    height: 50px;
+    border: 1px solid rgb(230 28 69);
+    border-radius: 10px;
+    padding: 0 5rem 0 1rem;
+    width: 100%;
+    align-items: center;
+}
+button.loop{
+    display: block;
+    background: url("../img/loop.svg") no-repeat center center / contain;
+    height: 30px;
+    width: 30px;
+    opacity: 0.5;      
+}
+#h-search-block .loop{
+    height: 30px;
+    width: 30px;
+    margin-left: -50px;
+}
+#h-search-block .close_serch{
+    display: block;
+    background: url("../img/cross.svg") no-repeat center center / contain;
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+    opacity: 0.5;
+}
+#popular-serch-list{
+    margin-top: 2rem;
+    width: 90%;
+}
+#popular-serch-list li{
+    display: block;
+    margin: 1rem 0px;
+    padding: 5px 30px;
+    line-height: 1.5;
+}
+
+/**/
+#serch-bar{
+    display: none; 
+    position: absolute;   
+    padding: 20px 40px;
+    z-index: 120; 
+    background-color: #fff; 
+    max-width: 1920px;  
+}
+#h-search-block{
+
+    top: 0;
+    background-color: #fff;
+}
+#serch-bar.active{
+    display: block;
+}
+.overlay-red{
+    position: fixed;
+    z-index: 110;
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    background-color: rgba(230, 28, 68, 0.575);
+    display: none;
+}
+.overlay-red.active{
+    display: block;
+}
+
+@media screen and (max-width: 767px){
+    .h-tel-group{
+        margin: 0px;
+    }
+    #h-logo{
+        text-align: center;
+    }
+    
+}
